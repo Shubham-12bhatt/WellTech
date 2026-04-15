@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4CAF50;
+  --color-primary-dark: #388E3C;
+  --color-secondary: #ff8c42;
+  --color-secondary-dark: #e0742f;
+  --color-tertiary: #e8f5e9;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-white: #ffffff;
+  --color-bg-light: #f9fbfc;
+  --color-border: #e0e0e0;
+  --color-success: #4CAF50;
+  --color-error: #dc3545;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+.bg-primary { background-color: var(--color-primary); }
+.text-primary { color: var(--color-primary); }
+.border-primary { border-color: var(--color-primary); }
+
+.btn-primary {
+  @apply inline-block px-6 py-3 bg-[#4CAF50] text-white font-semibold rounded-full transition-colors duration-300 hover:bg-[#388E3C];
+}
+
+.btn-secondary {
+  @apply inline-block px-6 py-3 bg-[#ff8c42] text-white font-semibold rounded-full transition-colors duration-300 hover:bg-[#e0742f];
+}
+
+.btn-tertiary {
+  @apply inline-block px-6 py-3 bg-transparent text-[#4CAF50] font-semibold rounded-full border-2 border-[#4CAF50] transition-colors duration-300 hover:bg-[#e8f5e9];
+}
+@layer base{
+  button:not(:disabled),
+  [role = "button"]:not(:disabled){
+    cursor: pointer;
+  }
+}
