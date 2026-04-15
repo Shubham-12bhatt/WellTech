@@ -10,7 +10,7 @@ const Features = () => {
       icon: <Activity className="w-8 h-8 text-[#4CAF50]" />,
       title: 'AI-Powered Consultation',
       description: 'Book doctor consultations, chat with our AI assistant, and receive real-time health insights.',
-      action: () => document.getElementById('chat-section')?.scrollIntoView({ behavior: 'smooth' })
+      action: () => navigate('/consultations')
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Features = () => {
       icon: <Heart className="w-8 h-8 text-[#4CAF50]" />,
       title: 'Lifestyle Guidance',
       description: 'Receive customized advice on nutrition, exercise, and mental wellness tailored to your goals.',
-      action: () => document.getElementById('health-assessment')?.scrollIntoView({ behavior: 'smooth' })
+      action: () => navigate('/lifestyle')
     }
   ];
 

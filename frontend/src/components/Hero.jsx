@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#333333] leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1b5e20] via-[#4CAF50] to-[#0d47a1] leading-tight pb-2 drop-shadow-sm">
               Transforming Wellness Through Innovation
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
@@ -42,7 +42,7 @@ const Hero = () => {
             <img 
               src="/images/hero.webp" 
               alt="Tech-powered wellness journey" 
-              className="relative w-full h-auto rounded-2xl shadow-2xl object-cover"
+              className="relative w-[90%] md:w-[85%] mx-auto block h-auto rounded-2xl shadow-2xl object-cover transform scale-[1.03] -translate-y-3 md:scale-[1.12] md:-translate-y-8 transition-transform duration-700 ease-out"
               onError={(e) => {
                 e.target.src = 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
               }}

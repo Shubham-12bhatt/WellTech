@@ -12,9 +12,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Consultations', path: '/#consultations' },
+    { name: 'Consultations', path: '/consultations' },
     { name: 'Products', path: '/ecommerce' },
-    { name: 'Lifestyle Guidance', path: '/#lifestyle' },
+    { name: 'Lifestyle Guidance', path: '/lifestyle' },
     { name: 'About Us', path: '/#about' },
   ];
 

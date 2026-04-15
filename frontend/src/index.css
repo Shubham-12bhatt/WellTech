@@ -26,15 +26,15 @@ body {
 .border-primary { border-color: var(--color-primary); }
 
 .btn-primary {
-  @apply inline-block px-6 py-3 bg-[#4CAF50] text-white font-semibold rounded-full transition-colors duration-300 hover:bg-[#388E3C];
+  @apply inline-block px-6 py-3 bg-[#4CAF50] text-white font-semibold rounded-full transition-all duration-300 hover:bg-[#388E3C] hover:shadow-[0_8px_20px_rgb(76,175,80,0.3)] hover:-translate-y-1;
 }
 
 .btn-secondary {
-  @apply inline-block px-6 py-3 bg-[#ff8c42] text-white font-semibold rounded-full transition-colors duration-300 hover:bg-[#e0742f];
+  @apply inline-block px-6 py-3 bg-[#ff8c42] text-white font-semibold rounded-full transition-all duration-300 hover:bg-[#e0742f] hover:shadow-lg hover:-translate-y-1;
 }
 
 .btn-tertiary {
-  @apply inline-block px-6 py-3 bg-transparent text-[#4CAF50] font-semibold rounded-full border-2 border-[#4CAF50] transition-colors duration-300 hover:bg-[#e8f5e9];
+  @apply inline-block px-6 py-3 bg-transparent text-[#4CAF50] font-semibold rounded-full border-2 border-[#4CAF50] transition-all duration-300 hover:bg-[#e8f5e9] hover:shadow-md hover:-translate-y-1;
 }
 @layer base{
   button:not(:disabled),
